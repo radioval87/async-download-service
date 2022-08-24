@@ -3,10 +3,10 @@ import asyncio
 import logging
 import os
 import subprocess
+from functools import partial
 
 import aiofiles
 from aiohttp import web
-from functools import partial
 
 logger = logging.getLogger('server')
 SAMPLE_SIZE = 1024 * 100
